@@ -1,0 +1,570 @@
+﻿Slip solution 
+Slip1.html
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="project.css">
+
+
+</head>
+<body>
+    <h2>Project Management</h2>
+    <table cellpadding="1="2" align="center">
+      tr
+        </tr>
+        <th class="row1">Assigned to</th>
+        <tr>
+            <td class="col1">Assigned to</td>
+            <td class="col2">
+                <select name="person" id="projectAssigned">
+                    <option value="Er Merry Petision">Er Merry Petision</option>
+                    <option value="Er Deepak Bhusan">Er Deepak Bhusan</option>
+                    <option value="Er Robert Watson">Er Robert Watson</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <th class="row1">Start Date</th>
+        <tr>
+            <td class="col1">Start Date</td>
+            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
+        </tr>
+        <th class="row1">End Date</th>
+        <tr>
+            <td class="col1">End Date</td>
+            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
+        </tr>
+
+
+        <th class="row1">Priority</th>
+        <tr>
+            <td class="col1">Priority</td>
+            <td class="col2">
+                <input type="radio" name="priority" id="high" value="High"> High
+                <input type="radio" name="priority" id="average" value="Average"> Average
+                <input type="radio" name="priority" id="low" value="Low"> Low
+            </td>
+        </tr>
+        <th class="row1">Description</th>
+        <tr>
+            <td class="col1">Description</td>
+            <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
+        </tr>
+        <tr colspan="2" align="center">
+            <td>
+                <button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button>
+            </td>
+            <td>
+                <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>
+                <button type="reset" class="reset2" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <script src="project.js"></script>
+</body>
+
+
+</html>
+Project.css
+h2 {
+    font-family: Arial;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+table {
+    background-color: rgb(107, 250, 243);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+}
+
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+
+input[type=date] {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+
+
+select {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 8px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+
+textarea {
+    padding: 2px;
+    line-height: 1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    } 
+
+
+.reset1 {
+    width: 30%;
+    background-color: #547ef3;
+    color: white;
+    padding: 12px 8px;
+    margin-right: 50px;
+    margin-left: -50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+
+
+    margin-top: auto;
+}
+.reset2:hover{
+        background-color: #584ca0;
+     }
+
+
+button[type=submit] {
+    width: 65%;
+    padding: 12px 8px;
+    margin-left: 80px;
+    margin-top: auto;
+    /* margin-bottom: 20px; */
+    margin-right: -20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #33d439;
+    color: white;
+    font-size: 15px;
+}
+
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.row1{
+    visibility: hidden;
+    display: none;
+}
+.reset2{
+    visibility: hidden;
+    display: none;
+}
+Slip2
+<HTML>
+<head><TITLE><CENTER>My City</CENTER></TITLE>
+</head>
+<body style="background-color:pink;">
+<h1 style="text-align: center ; Color: blue;"> My City name: Pune </h1>
+<h1 style="font-size=30; color: powderblue; "> ::Pune city Landmarks:: </h1>
+<ul >
+<li style="color : blue; font-size=20; font-family:verdana;">National Defence Academy</li>
+<li style="color : red; font-size=21; font-family:arial;">Dagadusheth Halwai Ganapati Temple</li>
+<li style="color : green ;font-size=19; font-family:courier;">ISKCON NVCC
+28
+Temple</li>
+<li style="color : yellow; font-size=22; font-family:Calibri;">Pune University</li>
+</ul>
+<div style="background-color: lightblue;width: 210px; height: 210px; overflow: scroll;">
+Pune, also called ‘Poona’, is situated in the state of Maharashtra, India.
+It is also known as the ‘Queen of the Deccan’ and attained its high importance when it became the capital
+of Bhonsle Marathas in the 17th century.
+</div>
+<img style="border: 1px solid red; border-radius: 4px; padding: 5px; width: 150px;" src="puneimage.jpg"></img>
+</body>
+</HTML>
+Slip3
+<html>
+
+
+<head>
+
+
+<title>XII IT</title>
+
+
+<style type="text/css">
+
+
+ h1{text-align: center;background-color: green;color: red;font-family: comic sans MS}
+
+
+ p{color: blue}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<h1>Titan fastrack</h1>
+
+
+<P>Titan fastrack is a fashion accesarry retail brand in india.</P>
+
+
+</body>
+
+
+</html>
+Slip4
+<html>
+<table border="1">
+      <tr>
+        <th colspan="4"><h1>list of books</h1></th>
+      </tr>
+      <tr>
+        <th rowspan="2">Item no</th>
+        <th rowspan="2">Item name</th>
+<th colspan="2">price</th>
+      </tr>
+      <tr>
+        <th>Rs</th>
+        <th>paise</th>
+             </tr>
+<tr>
+        <td>1</td>
+        <td>programmming book of python</td>
+        <td>500</td>
+        <td>50</td>
+             </tr>
+
+
+<tr>
+        <td>2</td>
+        <td>programmming book of java</td>
+        <td>345</td>
+        <td>00</td>
+             </tr>
+
+
+</table>
+</html>
+Slip8
+HomephpWrite a PHP script for find small string check occurrences and replace | PHP - IProgramX
+Write a PHP script for find small string check occurrences and replace | PHP - IProgramX
+by - IProgram X on - August 06, 2018
+Q. Write a PHP script for the following: Design a form to accept two strings from the user. Find whether the small string appears at the start of the large string. Provide a text box to accept the string that will replace all occurrences of small string present in the large string. Also, split the large string into separate words. (Use regular expressions) 
+
+  
+
+
+
+
+HTML File:
+
+<html>
+<body>
+<form action='ass1b2' method=post>
+<pre>
+Enter first string  :<input type='text' name='str1'><br>
+Enter second string  :<input type='text' name='str2'><br>
+Enter string for replace:<input type='text' name='str3'><br></h2>
+                                                                                                                             
+                        <input type='radio' name="ch" value=1>Occurence.
+                        <input type='radio' name="ch" value=2>Replace.
+                        <input type='radio' name="ch" value=3>split.                                                                                                   
+                        <input type=submit value=ok>    <input type=reset value=cancel>
+</pre>
+</form>
+</body>
+
+</html>
+
+PHP Function:
+NOTE: PHP function is saved as "ass1b2.php"
+
+<?php
+        $str1=$_POST['str1'];
+        $str2=$_POST['str2'];
+        $str3=$_POST['str3'];
+        $ch=$_POST['ch'];
+        echo"First string=$str1.<br>";
+        echo"Second String=$str2.<br>";
+        echo"String for replace=$str3.<br>";
+        if(strlen($str1)>strlen($str2))
+        {
+                switch($ch)
+                {
+                case 1: $pos=strpos($str1,$str2);
+                        if($pos!=0)
+                                echo"String '$str2' Not present at the start of  '$str1'.<br>";
+                        else
+                                echo"String '$str2' Present at the strat of '$str1'.<br>";
+                break;
+                case 2:
+                        $str4=str_replace($str2,$str3,$str1);
+                        printf("\nAfter replacing string::");
+                        echo $str4;
+                break;
+                case 3: $s=preg_split("//",$str1);
+                        foreach($s as $v) echo "\t$v <br>";
+                break;
+                }
+        }
+        else
+        {
+        switch($ch)
+                {
+                case 1:$pos=strpos($str2,$str1);
+                        if($pos!=0)
+                                echo"String '$str1' Not present at the start of  '$str2'.<br>";
+                        else
+                                echo"String '$str1' Present at the start of '$str2'.<br>";
+                break;
+                case 2: $str4=str_replace($str1,$str3,$str2);
+                                echo "After replacing string::$str4<br>";
+                break;
+                case 3:
+                        echo"After splitting the string::<br>";
+                        $s=preg_split("//",$str2);
+                                foreach($s as $v) echo "\t$v <br>";
+                }
+        }
+
+?>
+
+Output:
+
+  
+
+
+
+(do same operation)
+
+
+  
+
+
+
+Slip 10
+<html>
+<body>
+<form method=get action=slip10.php>
+<h3>Enter 1st number::: 
+<input type=text name=num1><br>
+Enter 2nd number:::
+<input type=text name=num2><br>
+Enter what operations to be performed::::<br>
+<input type=radio name=radio value=1 checked>mod of 2 no<br>
+<input type=radio name=radio value=2>power<br>
+<input type=radio name=radio value=3>sum of n number<br>
+<input type=radio name=radio value=4>factorial<br>
+<input type=submit name=submit value=submit><br>
+<input type=reset name=reset value=clear>
+</form>
+</body>
+</html>
+Slip10.php 
+<?php
+include"slip10.html";
+Function operation($num1,$num2,$op)
+{
+switch($op)
+{
+case 1:printf("The mod of %d and %d is %d",$num1,$num2,($num1%$num2));
+break;
+case 2:printf("The power of %d and %d is %d",$num1,$num2,pow($num1,$num2));
+break;
+case 3:
+{
+$num = readline("Enter the n number: ");
+$n = $num;
+$sum = 0;
+while ($n >= 0) {
+    $sum = $sum + $n;
+    $n--;
+}
+echo "Sum of $num number is: $sum";
+}
+break;
+case 4:
+{
+$num = 4;  
+$factorial = 1;  
+for ($x=$num; $x>=1; $x--)   
+{  
+  $factorial = $factorial * $x;  
+}  
+echo "Factorial of $num is $factorial";  
+}
+break;
+}
+}
+$num1=$_GET['num1'];
+$num2=$_GET['num2'];
+$op=$_GET['radio'];
+operation($num1,$num2,$op);
+?>
+Slip11
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+  <h2>Button Styles</h2>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+ <button type="button" class="btn btn-error">Error</button> 
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+      
+</div>
+
+
+</body>
+</html>
+Slip12.html
+<html>
+<body>
+<form method=get action=setb1.php>
+<h3>Enter 1st number::: 
+<input type=text name=num1><br>
+Enter 2nd number:::
+<input type=text name=num2><br>
+Enter what operations to be performed::::<br>
+<input type=radio name=radio value=1 checked>ADDITION<br>
+<input type=radio name=radio value=2>SUBTRACTION<br>
+<input type=radio name=radio value=3>MULTIPLICATION<br>
+<input type=radio name=radio value=4>DIVISION<br>
+<input type=submit name=submit value=submit><br>
+<input type=reset name=reset value=clear>
+</form>
+</body>
+</html>
+Slip12.php 
+<?php
+include"slip12.html";
+Function operation($num1,$num2,$op)
+{
+switch($op)
+{
+case 1:printf("The addtion of %d and %d is %d",$num1,$num2,($num1+$num2));
+break;
+case 2:printf("The subtraction of %d and %d is %d",$num1,$num2,($num1-$num2));
+break;
+case 3:printf("The multiplication of %d and %d is %d",$num1,$num2,($num1*$num2));
+break;
+case 4:if($num2==0)
+{
+echo "Divide error nt possible";
+}
+else
+printf("The division of %d and %d is %d",$num1,$num2,($num1/$num2));
+break;
+}
+}
+$num1=$_GET['num1'];
+$num2=$_GET['num2'];
+$op=$_GET['radio'];
+operation($num1,$num2,$op);
+?>
+Slip13
+Chessboard
+<html> 
+     <head> 
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body> 
+  <h3>Chess Board using Nested For Loop</h3>
+   <table width="270px" cellspacing="0px" cellpadding="0px" border="1px">
+   <!-- cell 270px wide (8 columns x 60px) -->
+      <?php
+      for($row=1;$row<=8;$row++)
+          {
+          echo "<tr>";
+          for($col=1;$col<=8;$col++)
+                  {
+          $total=$row+$col;
+          if($total%2==0)
+                  {
+          echo "<td height=30px width=30px bgcolor=#FFFFFF></td>";
+          }
+                  else
+                  {
+          echo "<td height=30px width=30px bgcolor=#000000></td>";
+          }
+          }
+          echo "</tr>";
+    }
+          ?>
+  </table>
+  </body>
+  </html>
+
+
+Slip14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid">
+  <h1>Hello World!</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+  </div>
+</div>
+
+
+</body>
+</html>
